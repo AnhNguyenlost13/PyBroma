@@ -3,7 +3,7 @@ from setuptools import find_namespace_packages
 
 setup(
     name="pybroma",
-    version="0.1.2",
+    version="0.1.3",
     author="Calloc",
     packages=find_namespace_packages(include="pybroma*"),
     cmake_install_dir="pybroma",
