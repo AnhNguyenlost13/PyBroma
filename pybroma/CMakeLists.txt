@@ -5,6 +5,7 @@ find_package(Python REQUIRED COMPONENTS Interpreter Development)
 
 set(CYTHON_SRC ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}.cpp)
 set(PYX_SRC ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}.pyx)
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDLL")
 
 add_custom_command(
     OUTPUT ${CYTHON_SRC}
